@@ -1,0 +1,16 @@
+- STEP 1: We need to install the following packages to run the Python code:
+$ pip install ase
+$ pip install cif2cell
+
+- STEP 2: Find and save the CIF file that you want to convert to a QE file in the CIF directory
+For 2D structures: https://www.materialscloud.org/discover/mc2d/dashboard/ptable
+For 3D structures: https://www.materialscloud.org/discover/mc3d/dashboard/ptable
+
+- STEP 3: Run the following command to convert the CIF file to a QE file:
+For 2D structures:
+$ python3 cif2vc-relax-2D.py
+For 3D structures:
+$ python3 cif2vc-relax-3D.py 
+
+The QE file vc-relax.in will be saved in the vc-relax directory
+*** Please remember to download the pseudopotentials from the SSSP 1.3.0 PBE efficiency form https://www.materialscloud.org/discover/sssp and save them in the pseudo directory
